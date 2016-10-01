@@ -1,0 +1,17 @@
+#directories
+.gradle/
+.idea/
+build/
+gradle/
+
+#files
+local.properties
+*.apk
+*.class
+*.dex
+*.iml
+*.iml
+*.jks
+*.log
+gradlew
+gradlew.bat

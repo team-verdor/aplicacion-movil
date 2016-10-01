@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Opciones">
+        <item> </item>
+        <item> Arcilloso</item>
+        <item> Arenoso</item>
+        <item> Franco</item>
+
+    </string-array>
+</resources>
