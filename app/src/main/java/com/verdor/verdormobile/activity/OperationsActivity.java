@@ -44,7 +44,7 @@ public class OperationsActivity extends AppCompatActivity {
     }
 
     private void processSend(String param) {
-        final String inputString = "http://192.168.1.11/verdor/api.php" + param;
+        final String inputString = "http://192.168.1.101/api.php" + param;
 
         AsyncTask<String, Void, String> task = new AsyncTask<String, Void, String>() {
             @Override
