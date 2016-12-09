@@ -7,60 +7,58 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Operaciones">
+    tools:context=".activity.OperationsActivity">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/scrollView2">
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:weightSum="1"
-            android:gravity="center">
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/button7"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Estado Actual"
-                    android:drawableLeft="@drawable/llave"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/llave"
                     android:gravity="center"
-                    android:id="@+id/button7"/>
+                    android:text="Estado Actual" />
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/button8"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Operaciones"
-                    android:drawableLeft="@drawable/operaciones"
-                    android:id="@+id/button8" />
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/operaciones"
+                    android:text="Operaciones" />
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/button10"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Estadisticas"
-                    android:drawableLeft="@drawable/estadist"
-                    android:id="@+id/button10" />
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/estadist"
+                    android:text="Estadisticas" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

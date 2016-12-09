@@ -1,14 +1,11 @@
 package com.verdor.verdormobile.activity;
 
-import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
-import com.verdor.verdormobile.Net;
 import com.verdor.verdormobile.R;
 
 public class OperationsActivity extends AppCompatActivity {
@@ -17,15 +14,26 @@ public class OperationsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_operations);
+        Button b1 = (Button) findViewById(R.id.button5);
 
-        addListeners();
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //       Intent intent = new Intent(FirstActivity.this, OrderScreen.class);
+                Intent button_uno = new Intent(OperationsActivity.this, CultivationActivity.class);
+                startActivity(button_uno);
+            }
+        });
 
-        this.myNet = new Net();
+        // addListeners();
+
+        //this.myNet = new Net();
     }
 
-    Net myNet;
 
-    private void addListeners() {
+   /* Net myNet;
+
+   private void addListeners() {
         Button send = ((Button) findViewById(R.id.button_bomba_off));
         send.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,7 +52,7 @@ public class OperationsActivity extends AppCompatActivity {
     }
 
     private void processSend(String param) {
-        final String inputString = "http://192.168.1.11/verdor/api.php" + param;
+        final String inputString = "http://192.168.1.101/api.php" + param;
 
         AsyncTask<String, Void, String> task = new AsyncTask<String, Void, String>() {
             @Override
@@ -61,5 +69,5 @@ public class OperationsActivity extends AppCompatActivity {
         };
 
         task.execute(inputString);
-    }
+    }*/
 }
