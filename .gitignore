@@ -15,3 +15,5 @@ local.properties
 *.log
 gradlew
 gradlew.bat
+
+Thumbs.db

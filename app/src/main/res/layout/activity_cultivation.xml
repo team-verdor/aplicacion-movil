@@ -71,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight=".5"
                     android:inputType="numberSigned"
-                    android:maxLength="5" />
+                    android:maxLength="6" />
             </LinearLayout>
 
             <LinearLayout
@@ -92,7 +92,7 @@
                 <Spinner
                     android:id="@+id/spinner"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight=".5"
                     android:spinnerMode="dropdown" />
             </LinearLayout>
@@ -116,7 +116,8 @@
                     android:id="@+id/spinner2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight=".5" />
+                    android:layout_weight=".5"
+                    android:dropDownWidth="match_parent" />
             </LinearLayout>
 
             <LinearLayout
@@ -124,7 +125,8 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
 
                 <TextView
                     android:id="@+id/textView12"
@@ -139,7 +141,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight=".5"
-                    android:inputType="numberSigned" />
+                    android:inputType="numberSigned"
+                    android:maxLength="3" />
 
             </LinearLayout>
 
@@ -149,20 +152,12 @@
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/editText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
-
             </LinearLayout>
 
             <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:text="Ingresar Cultivo" />
         </LinearLayout>

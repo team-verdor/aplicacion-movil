@@ -1,8 +1,8 @@
 package com.verdor.verdormobile.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -26,7 +26,7 @@ public class PlantLibraryActivity extends AppCompatActivity {
                 Intent intent= new Intent(v.getContext(),OperationsActivity.class);
                 startActivity(intent);*/
             public void onClick(View v) {
-                Intent myintent2 = new Intent(PlantLibraryActivity.this, CultivationStatusActivity.class);
+                Intent myintent2 = new Intent(PlantLibraryActivity.this, CultivationActivity.class);
                 startActivity(myintent2);
 
             }
@@ -37,7 +37,7 @@ public class PlantLibraryActivity extends AppCompatActivity {
                 Intent intent= new Intent(v.getContext(),OperationsActivity.class);
                 startActivity(intent);*/
             public void onClick(View v) {
-                Intent myintent2 = new Intent(PlantLibraryActivity.this, CultivationStatusActivity.class);
+                Intent myintent2 = new Intent(PlantLibraryActivity.this, CultivationActivity.class);
                 startActivity(myintent2);
 
             }
@@ -48,7 +48,7 @@ public class PlantLibraryActivity extends AppCompatActivity {
                 Intent intent= new Intent(v.getContext(),OperationsActivity.class);
                 startActivity(intent);*/
             public void onClick(View v) {
-                Intent myintent2 = new Intent(PlantLibraryActivity.this, CultivationStatusActivity.class);
+                Intent myintent2 = new Intent(PlantLibraryActivity.this, CultivationActivity.class);
                 startActivity(myintent2);
 
             }
@@ -59,7 +59,7 @@ public class PlantLibraryActivity extends AppCompatActivity {
                 Intent intent= new Intent(v.getContext(),OperationsActivity.class);
                 startActivity(intent);*/
             public void onClick(View v) {
-                Intent myintent2 = new Intent(PlantLibraryActivity.this, CultivationStatusActivity.class);
+                Intent myintent2 = new Intent(PlantLibraryActivity.this, CultivationActivity.class);
                 startActivity(myintent2);
 
             }

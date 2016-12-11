@@ -12,36 +12,25 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.NetExampleActivity"></activity>
-        <activity android:name=".activity.OperationsActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".activity.NetExampleActivity" />
+        <activity android:name=".activity.OperationsActivity" />
         <activity android:name=".activity.MainActivity">
+
+        </activity>
+        <activity
+            android:name=".activity.UserLoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.CultivationStatusActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".activity.PlantLibraryActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".activity.CultivationActivity"></activity>
+        <activity android:name=".activity.CultivationStatusActivity" />
+        <activity android:name=".activity.PlantLibraryActivity" />
+        <activity android:name=".activity.CultivationActivity" />
+        <activity
+            android:name=".activity.StatisticsActivity"
+            android:label="@string/title_activity_statistics"></activity>
     </application>
 
 </manifest>

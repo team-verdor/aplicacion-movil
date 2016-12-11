@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Verdor Mobile</string>
+    <string name="app_name">Verdor</string>
+    <string name="title_activity_statistics">Estadisticas del Cultivo</string>
 </resources>

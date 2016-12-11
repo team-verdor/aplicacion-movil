@@ -18,6 +18,7 @@ import java.util.Locale;
 
 public class CultivationActivity extends AppCompatActivity implements View.OnClickListener {
     Spinner opciones;
+    Spinner comunas;
     //UI References
     private EditText fromDateEtxt;
     private DatePickerDialog fromDatePickerDialog;
@@ -28,13 +29,18 @@ public class CultivationActivity extends AppCompatActivity implements View.OnCli
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cultivation);
         opciones = (Spinner) findViewById(R.id.spinner);
+        comunas = (Spinner) findViewById(R.id.spinner2);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.Opciones, android.R.layout.simple_spinner_item);
         opciones.setAdapter(adapter);
-
         findViewsById();
         dateFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
         setDateTimeField();
+        ArrayAdapter adapter1 = ArrayAdapter.createFromResource(this, R.array.Comunas, android.R.layout.simple_spinner_item);
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        comunas.setAdapter(adapter1);
+
     }
+
 
     private void findViewsById() {
         fromDateEtxt = (EditText) findViewById(R.id.editText3);

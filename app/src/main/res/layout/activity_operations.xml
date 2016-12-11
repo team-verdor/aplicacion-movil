@@ -90,7 +90,8 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/colorButtonNormal"
                     android:drawableLeft="@drawable/planta"
-                    android:text="Agregar Nuevo Cultivo" />
+                    android:text="Agregar Nuevo Cultivo"
+                    android:paddingRight="10dp" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

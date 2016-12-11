@@ -46,9 +46,11 @@
                 <Button
                     android:id="@+id/button7"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:drawableStart="@drawable/lechuga"
-                    android:text="Lechuga" />
+                    android:text="Lechuga"
+                    android:textSize="18sp"
+                    android:paddingLeft="30dp"
+                    android:layout_height="65dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -59,9 +61,11 @@
                 <Button
                     android:id="@+id/button9"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="65dp"
                     android:drawableStart="@drawable/zanahoria"
-                    android:text="Zanahoria" />
+                    android:text="Zanahoria"
+                    android:textSize="18sp"
+                    android:paddingLeft="30dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -72,9 +76,11 @@
                 <Button
                     android:id="@+id/button11"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="65dp"
                     android:drawableStart="@drawable/brocolii"
-                    android:text="Brocoli" />
+                    android:text="Brocoli"
+                    android:textSize="18sp"
+                    android:paddingLeft="30dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -85,9 +91,11 @@
                 <Button
                     android:id="@+id/button12"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="65dp"
                     android:drawableStart="@drawable/sandia"
-                    android:text="Sandia" />
+                    android:text="Sandia"
+                    android:textSize="18sp"
+                    android:paddingLeft="30dp" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

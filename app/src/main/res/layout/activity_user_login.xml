@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,102 +8,56 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="cl.verdor.verdor.IngresoUsuario">
+    tools:context="com.verdor.verdormobile.activity.UserLoginActivity"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/logo"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Aqui va el logo"
-            android:id="@+id/textView" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView2" />
-
-        <LinearLayout
-            android:orientation="horizontal"
+        <EditText
+            android:id="@+id/input_message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="80dp">
+            android:hint="Nombre de Usuario"
+            android:inputType="textPersonName"
+            android:maxLength="15"
+            android:layout_marginBottom="10dp" />
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:ems="10"
-                android:id="@+id/input_message"
-                android:layout_alignParentTop="true"
-                android:layout_alignLeft="@+id/input_response"
-                android:layout_alignStart="@+id/input_response"
-                android:hint="Nombre de Usuario"
-                android:maxLength="15"
-                android:allowUndo="false"
-                android:focusable="true"
-                android:singleLine="false" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
+        <EditText
+            android:id="@+id/input_response"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="20dp">
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp" />
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:ems="10"
-                android:id="@+id/input_response"
-                android:layout_below="@+id/input_message"
-                android:layout_centerHorizontal="true"
-                android:hint="Contraseña" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
+        <Button
+            android:id="@+id/button6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="right">
+            android:text="Ingresar"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Ingresar"
-                android:id="@+id/button6"
-                android:layout_below="@+id/input_response"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="50dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
+        <Button
+            android:id="@+id/button13"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Crear Nuevo Usuario"
-                android:id="@+id/button13" />
-        </LinearLayout>
-
+            android:layout_height="wrap_content"
+            android:text="Crear Nuevo Usuario"
+            android:layout_marginBottom="10dp" />
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

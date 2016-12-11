@@ -2,10 +2,19 @@
 <resources>
 
     <string-array name="Opciones">
-        <item> </item>
-        <item> Arcilloso</item>
-        <item> Arenoso</item>
-        <item> Franco</item>
+        <item>Seleccione</item>
+        <item>Arcilloso</item>
+        <item>Arenoso</item>
+        <item>Franco</item>
 
+    </string-array>
+
+    <string-array name="Comunas">
+        <item>Seleccione</item>
+        <item>Ovalle</item>
+        <item>Rio Hurtado </item>
+        <item>Monte Patria</item>
+        <item>Combarbalá</item>
+        <item>Punitaqui</item>
     </string-array>
 </resources>
