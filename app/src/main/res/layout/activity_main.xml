@@ -24,7 +24,7 @@
             android:layout_height="match_parent"
             android:drawableStart="@drawable/llave"
             android:gravity="center"
-            android:text="Estado Actual"
+            android:text="Estado de Cultivos"
             android:textSize="18sp"
             android:textStyle="normal|bold"
             android:paddingLeft="30dp" />

@@ -87,7 +87,7 @@
                         android:adjustViewBounds="true" />
 
                     <TextView
-                        android:text="70%"
+                        android:text="38%"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView15"
@@ -129,7 +129,7 @@
                         android:adjustViewBounds="true" />
 
                     <TextView
-                        android:text="18°"
+                        android:text="15º"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView11"

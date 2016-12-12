@@ -27,6 +27,8 @@
         </activity>
         <activity android:name=".activity.CultivationStatusActivity" />
         <activity android:name=".activity.PlantLibraryActivity" />
+        <activity android:name=".activity.PlantSelectorActivity" />
+        <activity android:name=".activity.PlantSelectorOperationActivity" />
         <activity android:name=".activity.CultivationActivity" />
         <activity
             android:name=".activity.StatisticsActivity"
