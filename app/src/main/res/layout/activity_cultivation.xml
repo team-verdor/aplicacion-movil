@@ -133,7 +133,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight=".5"
-                    android:text="Espacio entre emisores (cm)"
+                    android:text="Distancia entre emisores (cm)"
                     android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
                 <EditText
