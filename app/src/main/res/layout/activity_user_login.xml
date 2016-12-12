@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:hint="Nombre de Usuario"
             android:inputType="textPersonName"
-            android:maxLength="15"
+            android:maxLength="50"
             android:layout_marginBottom="10dp" />
 
         <EditText
