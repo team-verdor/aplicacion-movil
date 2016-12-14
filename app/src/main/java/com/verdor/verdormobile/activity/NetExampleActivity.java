@@ -8,9 +8,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
-import com.verdor.verdormobile.Net;
+import com.verdor.verdormobile.net.Net;
 import com.verdor.verdormobile.R;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class NetExampleActivity extends AppCompatActivity {
 
@@ -21,41 +25,38 @@ public class NetExampleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_example_net);
         addListeners();
-        Log.e("actividad", "inicio");
 
         this.myNet = new Net();
     }
 
     private void addListeners() {
-        Button send = ((Button) findViewById(R.id.button_bomba_off));
+        Button send = ((Button) findViewById(R.id.button_send));
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("actividad", "click");
-
                 processSend();
             }
         });
 
-        Button clear = ((Button) findViewById(R.id.button_bomba_on));
+        Button clear = ((Button) findViewById(R.id.button_clear));
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(null, "click2");
                 processClear();
             }
         });
     }
 
     private void processSend() {
-        String inputString = ((EditText) findViewById(R.id.input_message)).getText().toString();
+        String inputString = ((EditText) findViewById(R.id.input_route)).getText().toString();
+        Map<String, String> params = stringToMap(((EditText) findViewById(R.id.input_parameters)).getText().toString());
 
-        Log.d("actividad", "sending" + inputString);
-        AsyncTask<String, Void, String> task = new AsyncTask<String, Void, String>() {
+        Log.i("param", params.toString());
+        AsyncTask<Object, Void, String> task = new AsyncTask<Object, Void, String>() {
             @Override
-            protected String doInBackground(String... params) {
+            protected String doInBackground(Object... params) {
                 Log.d("actividad", "doing background");
-                return myNet.requestString(params[0]);
+                return myNet.requestString((String) params[0], (Map<String, String>) params[1]);
             }
 
             @Override
@@ -65,7 +66,26 @@ public class NetExampleActivity extends AppCompatActivity {
             }
         };
 
-        task.execute(inputString);
+        task.execute(inputString, params);
+    }
+
+    private Map<String, String> stringToMap(String s) {
+        Map<String, String> m = new HashMap<String, String>();
+
+        String[] params = s.split(",");
+
+        for (String s2 : params) {
+            String[] pair = s2.split(":");
+
+            if (pair.length != 2) continue;
+
+            String key = pair[0];
+            String value = pair[1];
+
+            m.put(key, value);
+        }
+
+        return m;
     }
 
     private void processClear() {

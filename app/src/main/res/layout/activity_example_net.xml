@@ -12,12 +12,22 @@
     tools:context="com.verdor.verdormobile.activity.NetExampleActivity">
 
     <EditText
-        android:id="@+id/input_message"
+        android:id="@+id/input_route"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:maxLines="1" />
+        android:maxLines="1"
+        android:hint="route" />
+
+    <EditText
+        android:id="@+id/input_parameters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:maxLines="1"
+        android:hint="parameters" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,13 +35,13 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button_bomba_off"
+            android:id="@+id/button_send"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Send" />
 
         <Button
-            android:id="@+id/button_bomba_on"
+            android:id="@+id/button_clear"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="c" />
@@ -39,11 +49,11 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/input_response"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
         android:ems="10"
-        android:inputType="textMultiLine" />
+        android:id="@+id/input_response"
+        android:inputType="none"
+        android:editable="false" />
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.verdor.verdormobile;
+package com.verdor.verdormobile.net;
 
 import android.app.Activity;
 
