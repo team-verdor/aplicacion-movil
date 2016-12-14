@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Opciones de Riego"
+                android:text="Opciones de Control"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textStyle="bold" />
 
@@ -38,7 +38,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Bomba de Riego" />
+                    android:text="Activar Riego Manual" />
             </LinearLayout>
 
             <TextView
@@ -48,7 +48,7 @@
 
                 android:layout_below="@+id/button_bomba_on"
                 android:layout_margin="10dp"
-                android:text="Opciones de Fertilizantes"
+                android:text="Opciones Adicionales"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textStyle="bold" />
 
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/button3"
                 android:layout_margin="10dp"
-                android:text="Otras Operaciones"
+                android:text="Gestion de Cultivos"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textStyle="bold" />
 
